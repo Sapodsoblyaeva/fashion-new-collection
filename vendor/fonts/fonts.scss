@@ -1,0 +1,19 @@
+@font-face {
+  src: url(./Promt/Prompt-Regular.woff2) format("woff2"),
+    url(./Promt/Prompt-Regular.woff) format("woff");
+  font-family: "Promt";
+  font-style: normal;
+  font-weight: 400;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  src: url(./Promt/Prompt-Medium.woff2) format("woff2"),
+    url(./Promt/Prompt-Medium.woff) format("woff");
+  font-family: "Promt";
+  font-style: normal;
+  font-weight: 500;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}

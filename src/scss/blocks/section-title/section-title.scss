@@ -1,0 +1,14 @@
+@use 'utils/mixins';
+@use 'utils/variables';
+
+.section-title {
+  @include text-type-heading_desktop;
+
+  @include media(xl) {
+    @include text-type-heading_notepad;
+  }
+
+  @include media(sm) {
+    @include text-type-heading_mobile;
+  }
+}
