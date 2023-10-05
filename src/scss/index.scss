@@ -2,7 +2,10 @@
 @import 'vendor/fonts/fonts';
 @import 'utils/mixins';
 @import 'utils/variables';
-@import 'blocks/page/page';
-@import 'blocks/section-title/section-title';
-@import 'blocks/header/header';
-@import 'blocks/about/about';
+@import 'src/blocks/page/page';
+@import 'src/blocks/section-title/section-title';
+@import 'src/blocks/header/header';
+@import 'src/blocks/about/about';
+@import 'src/blocks/looks/looks';
+@import 'src/blocks/footer/footer';
+@import 'src/blocks/side-menu/side-menu';

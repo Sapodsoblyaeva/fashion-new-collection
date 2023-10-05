@@ -81,6 +81,10 @@
   @include text(16px, 400, 24px);
 }
 
+@mixin text-type-mobile {
+  @include text(14px, 400, 20px);
+}
+
 @mixin button_reset {
   padding: 0;
   border: none;
@@ -108,6 +112,11 @@
 @mixin input {
   border: 0.5px solid $black;
   text-align: center;
+  background-color: transparent;
+}
+
+@mixin input-footer {
+  border: 0.5px solid $backgroundDarkGrey;
   background-color: transparent;
 }
 

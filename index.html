@@ -28,7 +28,7 @@
     <main class="content">
       <section class="about">
         <div class="about__heading">
-          <h1 class="section-title about__title">About</h1>
+          <h2 class="section-title about__title">About</h2>
           <p class="about__caption">
             The Spring-Summer '21 collection explores Givenchy in the form of a
             stream of consciousness for Williams and is a 'sampler' of what is
@@ -58,15 +58,15 @@
               src="<%=require('./images/photo3.png')%>"
               alt="Фото из новой коллекции Givenchy"
             />
-              <p class="about__quote about__quote_small">
-                Matthew M. Williams reveals his vision with help from an
-                all-star lineup of likeminded artists. The Creative Director
-                called on close friends in his tight-knit community of artists.
-                Kendall Jenner, Bella Hadid, Playboi Carti and the supermodels
-                Anok Yai and Liam Powers were each invited to put their own
-                stamp on key pieces, the better to highlight the importance of
-                cultivating a powerful personal style.
-              </p>
+            <p class="about__quote about__quote_small">
+              Matthew M. Williams reveals his vision with help from an all-star
+              lineup of likeminded artists. The Creative Director called on
+              close friends in his tight-knit community of artists. Kendall
+              Jenner, Bella Hadid, Playboi Carti and the supermodels Anok Yai
+              and Liam Powers were each invited to put their own stamp on key
+              pieces, the better to highlight the importance of cultivating a
+              powerful personal style.
+            </p>
           </article>
           <article class="about__article">
             <div class="about__text about__text_position">
@@ -85,10 +85,90 @@
           </article>
         </div>
       </section>
-      <section class="looks"></section>
+      <section class="looks">
+        <h2 class="section-title looks__title">Looks</h2>
+        <div class="looks__gallery">
+        <img
+          class="looks__image"
+          src="<%=require('./images/photo4.png')%>"
+          alt="Фото из новой коллекции Givenchy"
+        />
+        <img
+          class="looks__image"
+          src="<%=require('./images/photo5.png')%>"
+          alt="Фото из новой коллекции Givenchy"
+        />
+        <img
+          class="looks__image"
+          src="<%=require('./images/photo6.png')%>"
+          alt="Фото из новой коллекции Givenchy"
+        />
+        <img
+          class="looks__image"
+          src="<%=require('./images/photo7.png')%>"
+          alt="Фото из новой коллекции Givenchy"
+        />
+        <img
+          class="looks__image"
+          src="<%=require('./images/photo8.png')%>"
+          alt="Фото из новой коллекции Givenchy"
+        />
+        <img
+          class="looks__image"
+          src="<%=require('./images/photo9.png')%>"
+          alt="Фото из новой коллекции Givenchy"
+        />
+        <img
+          class="looks__image"
+          src="<%=require('./images/photo10.png')%>"
+          alt="Фото из новой коллекции Givenchy"
+        />
+        <img
+          class="looks__image"
+          src="<%=require('./images/photo11.png')%>"
+          alt="Фото из новой коллекции Givenchy"
+        />
+      </div>
+      </section>
     </main>
     <footer class="footer">
-      <p class="footer__author">&copy; 2023 Mesto Russia</p>
+      <p class="footer__text">
+        Subscribe to the newsletterand be the first to know about new collection’s drop date and news
+      </p>
+      <form class="footer__form">
+      <div class="footer__input-container">
+        <input
+          type="text"
+          id="e-mail"
+          class="footer__input"
+          placeholder="Enter your email here"
+        ></input>
+        <button type="submit" class="button footer__button">Submit</button>
+      </div>
+      <div
+      class="footer__checkbox-container"
+    >
+      <label
+        for="checkbox"
+        class="footer__checkbox-label"
+        ><input
+          type="checkbox"
+          name="checkbox"
+          id="checkbox"
+          class="footer__checkbox"
+          required
+        />
+      </label>
+      <p
+        class="footer__checkbox-text"
+      >I consent to the processing of my data by GIVENCHY in accordance with the conditions set forth in the Privacy Policy
+      </p>
+      <span
+        class="footer__checkbox-error"
+      ></span>
+    </div>
+        </form>
+      <p class="footer__copyright">&copy; 2021, Givenchy. Some rights reserved</p>
     </footer>
     <div class="popup editor-form">
       <div class="popup__container">
