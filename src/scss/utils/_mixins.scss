@@ -129,18 +129,3 @@
   width: 24px;
   height: 24px;
 }
-
-@mixin card-desktop {
-  width: 350px;
-  height: 436px;
-}
-
-@mixin card-notepad {
-  width: 243px;
-  height: 302px;
-}
-
-@mixin card-mobile {
-  width: 140px;
-  height: 174px;
-}
