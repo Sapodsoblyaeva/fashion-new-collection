@@ -9,4 +9,5 @@ SCSS
 Java Script
 
 Ссылка на github pages:
+https://sapodsoblyaeva.github.io/fashion-new-collection/
 
