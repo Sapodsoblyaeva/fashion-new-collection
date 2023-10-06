@@ -7,6 +7,10 @@
   width: 100%;
   margin-top: 80px;
 
+  @include media(md) {
+    margin-top: 60px;
+  }
+
   @include media(sm) {
     margin-top: 40px;
   }
@@ -47,11 +51,14 @@
     position: relative;
     max-width: 1400px;
     width: 100%;
-    margin-top: 80px;
 
     @include media(md) {
       margin-top: 120px;
       gap: 60px;
+
+      &:nth-of-type(1) {
+        margin-top: 0;
+      }
     }
 
     @include media(sm) {
@@ -80,9 +87,9 @@
 
     @include media(md) {
       max-width: 364px;
-      height: 425px;
-      padding-right: 141px;
-      margin-top: 70px;
+      height: 452px;
+      padding-right: 121px;
+      margin-top: 120px;
     }
 
     @include media(sm) {
@@ -96,10 +103,12 @@
   &__image-grey {
     width: 618px;
     height: 618px;
+    margin-top: 80px;
 
     @include media(md) {
       width: 304px;
       height: 304px;
+      margin-top: 0;
     }
 
     @include media(sm) {
@@ -111,10 +120,12 @@
   &__image-green {
     width: 875px;
     height: 1095px;
+    margin-top: 80px;
 
     @include media(md) {
       width: 485px;
       height: 607px;
+      margin-top: 0;
     }
 
     @include media(sm) {
@@ -128,8 +139,13 @@
     top: 351px;
     left: 20px;
 
+    &_position {
+      top: 506px;
+    }
+
     @include media(md) {
-      top: 0;
+      top: 70px;
+      left: 0;
       max-width: 364px;
       width: 100%;
 
@@ -151,12 +167,23 @@
     width: 100%;
     margin-bottom: 24px;
 
+    @include media(md) {
+      max-width: 364px;
+      width: 100%;
+    }
+
     @include media(sm) {
       @include text-type-section-title_mobile;
+      margin-bottom: 20px;
     }
 
     &_small {
       @include text-type-regular_desktop-notepad;
+
+      @include media(md) {
+        max-width: 373px;
+        width: 100%;
+      }
 
       @include media(sm) {
         @include text-type-regular_mobile;
@@ -172,7 +199,6 @@
 
     @include media(sm) {
       @include text-type-section-title_mobile;
-      margin-top: 20px;
     }
   }
 }

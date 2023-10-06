@@ -2,6 +2,7 @@
 @use 'utils/variables';
 
 .page {
+  @include container-max-widths;
   margin: 0 auto;
   font-family: Promt, 'Helvetica Neue', Arial, sans-serif;
   background-color: $white;

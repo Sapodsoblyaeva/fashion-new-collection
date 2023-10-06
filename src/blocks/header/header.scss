@@ -12,7 +12,8 @@
   padding: 0 20px;
 
   @include media(xl) {
-    max-height: 768px;
+    max-height: 646px;
+    padding: 0;
   }
 
   @include media(sm) {
@@ -37,11 +38,16 @@
     @include icon-size_desktop;
 
     object-fit: contain;
-    background-image: url('../../../images/burger.png');
+    background-image: url('../../images/burger.png');
     background-repeat: no-repeat;
     background-size: cover;
     border: none;
     background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
 
     @include media(sm) {
       @include icon-size_mobile;
@@ -60,13 +66,13 @@
     height: 100%;
 
     @include media(xl) {
-      max-width: 468px;
-      max-height: 768px;
+      width: 486px;
+      height: 646px;
     }
 
     @include media(sm) {
-      max-width: 320px;
-      max-height: 426px;
+      width: 320px;
+      height: 426px;
     }
   }
 
@@ -94,7 +100,7 @@
     margin-top: 32px;
 
     @include media(sm) {
-      @include button-size(280px, 20px);
+      @include button-size(280px, 44px);
       @include text-type-buttons_mobile;
       margin-top: 32px;
     }
@@ -102,5 +108,9 @@
     &:hover {
       @include button-style-hover;
     }
+  }
+
+  &__title {
+    display: inline-block;
   }
 }
