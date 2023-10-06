@@ -65,11 +65,11 @@
     @include input-footer;
     max-width: 592px;
     width: 100%;
-    padding: 0;
+    padding: 12px 24px;
+    color: white;
 
     &::placeholder {
       @include text-type-regular_mobile;
-      padding: 12px 24px;
     }
 
     @include media(xl) {
