@@ -1,0 +1,15 @@
+@use 'utils/mixins';
+@use 'utils/variables';
+
+.page {
+  @include container-max-widths;
+  margin: 0 auto;
+  font-family: Promt, 'Helvetica Neue', Arial, sans-serif;
+  background-color: $white;
+  color: $black;
+  position: relative;
+
+  &__container {
+    width: 100%;
+  }
+}

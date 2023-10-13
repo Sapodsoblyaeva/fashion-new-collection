@@ -1,0 +1,132 @@
+@use 'variables';
+
+@mixin media-breakpoint-up($breakpoint) {
+  $min-width: map-get($breakpoints, $breakpoint);
+
+  @media (min-width: $min-width) {
+    @content;
+  }
+}
+
+@mixin container-max-widths {
+  @each $breakpoint, $size in $container-max-widths {
+    @include media-breakpoint-up($breakpoint) {
+      max-width: $size;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+@mixin media($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint #{$breakpoint} не найден в переменной $breakpoints";
+  }
+}
+
+@mixin text($fs, $fw, $lh) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  margin: 0;
+}
+
+@mixin text-decoration($ls, $tt) {
+  letter-spacing: $ls;
+  text-transform: $tt;
+}
+
+@mixin text-type-heading_desktop {
+  @include text(48px, 500, 64px);
+  @include text-decoration(1.92px, uppercase);
+}
+
+@mixin text-type-section-title_desktop-notepad {
+  @include text(32px, 500, 44px);
+}
+
+@mixin text-type-buttons_desktop-notepad {
+  @include text(16px, 500, 24px);
+  @include text-decoration(0.32px, uppercase);
+}
+
+@mixin text-type-regular_desktop-notepad {
+  @include text(20px, 400, 32px);
+}
+
+@mixin text-type-heading_notepad {
+  @include text(32px, 500, 40px);
+  @include text-decoration(1.28px, uppercase);
+}
+
+@mixin text-type-heading_mobile {
+  @include text(24px, 500, 32px);
+  @include text-decoration(0.96px, uppercase);
+}
+
+@mixin text-type-section-title_mobile {
+  @include text(20px, 500, 28px);
+}
+
+@mixin text-type-buttons_mobile {
+  @include text(14px, 500, 20px);
+  @include text-decoration(0.28px, uppercase);
+}
+
+@mixin text-type-regular_mobile {
+  @include text(16px, 400, 24px);
+}
+
+@mixin text-type-mobile {
+  @include text(14px, 400, 20px);
+}
+
+@mixin button_reset {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+@mixin button-style {
+  @include button_reset;
+  border: 0.5px solid $black;
+  background: $black;
+  color: $white;
+}
+
+@mixin button-style-hover {
+  @include button_reset;
+  border: 0.5px solid $white;
+  background: $white;
+  color: $black;
+}
+
+@mixin button-size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin input {
+  border: 0.5px solid $black;
+  text-align: center;
+  background-color: transparent;
+}
+
+@mixin input-footer {
+  border: 0.5px solid $backgroundDarkGrey;
+  background-color: transparent;
+}
+
+@mixin icon-size_desktop {
+  width: 48px;
+  height: 48px;
+}
+
+@mixin icon-size_mobile {
+  width: 24px;
+  height: 24px;
+}

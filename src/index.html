@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Givenchy</title>
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header__menu">
+        <button type="button" class="header__burger"></button>
+        <p class="header__menu-text">MENU</p>
+      </div>
+      <img
+        class="header__image"
+        src="<%=require('./images/image_header.png')%>"
+        alt="Изображение модели в одежде из новой коллекции"
+      />
+      <div class="header__info">
+        <h1 class="section-title header__title">
+          GIVENCHY
+          <span class="section-title header__title">SPRING SUMMER 2021</span>
+          <span class="section-title header__title"
+            >BY MATTHEW M. WILLIAMS</span
+          >
+        </h1>
+        <button class="header__button button">
+          Subscribe to collection's news
+        </button>
+      </div>
+    </header>
+    <main class="content">
+      <section class="about">
+        <a name="about"></a>
+        <div class="about__heading">
+          <h2 class="section-title about__title">About</h2>
+          <p class="about__caption">
+            The Spring-Summer '21 collection explores Givenchy in the form of a
+            stream of consciousness for Williams and is a 'sampler' of what is
+            to come.
+          </p>
+        </div>
+        <div class="about__main-content">
+          <article class="about__article">
+            <div class="about__text">
+              <p class="about__quote">
+                “To me, fashion expresses a point of view where formality and
+                informality, construction and comfort co-exist. My ethos is
+                about the luxury of infusing clothes with your own personality,
+                not being worn by them,”
+              </p>
+              <span class="about__quote-author">Matthew M. Williams.</span>
+            </div>
+            <img
+              class="about__image about__image-red"
+              src="<%=require('./images/photo1.png')%>"
+              alt="Фото из новой коллекции Givenchy"
+            />
+          </article>
+          <article class="about__article">
+            <img
+              class="about__image about__image-grey"
+              src="<%=require('./images/photo3.png')%>"
+              alt="Фото из новой коллекции Givenchy"
+            />
+            <p class="about__quote about__quote_small">
+              Matthew M. Williams reveals his vision with help from an all-star
+              lineup of likeminded artists. The Creative Director called on
+              close friends in his tight-knit community of artists. Kendall
+              Jenner, Bella Hadid, Playboi Carti and the supermodels Anok Yai
+              and Liam Powers were each invited to put their own stamp on key
+              pieces, the better to highlight the importance of cultivating a
+              powerful personal style.
+            </p>
+          </article>
+          <article class="about__article">
+            <div class="about__text about__text_position">
+              <p class="about__quote">
+                “In each of these portraits, a strong character wears a look
+                that reflects who they are: they're the ones who bring the
+                clothes to life.”
+              </p>
+              <span class="about__quote-author">Matthew M. Williams.</span>
+            </div>
+            <img
+              class="about__image about__image-green"
+              src="<%=require('./images/photo2.png')%>"
+              alt="Фото из новой коллекции Givenchy"
+            />
+          </article>
+        </div>
+      </section>
+      <section class="looks">
+        <a name="looks"></a>
+        <h2 class="section-title looks__title">Looks</h2>
+        <div class="looks__gallery">
+          <img
+            class="looks__image"
+            src="<%=require('./images/photo11.png')%>"
+            alt="Фото из новой коллекции Givenchy"
+          />
+          <img
+            class="looks__image"
+            src="<%=require('./images/photo10.png')%>"
+            alt="Фото из новой коллекции Givenchy"
+          />
+          <img
+            class="looks__image"
+            src="<%=require('./images/photo9.png')%>"
+            alt="Фото из новой коллекции Givenchy"
+          />
+          <img
+            class="looks__image"
+            src="<%=require('./images/photo8.png')%>"
+            alt="Фото из новой коллекции Givenchy"
+          />
+          <img
+            class="looks__image"
+            src="<%=require('./images/photo7.png')%>"
+            alt="Фото из новой коллекции Givenchy"
+          />
+          <img
+            class="looks__image"
+            src="<%=require('./images/photo6.png')%>"
+            alt="Фото из новой коллекции Givenchy"
+          />
+          <img
+            class="looks__image"
+            src="<%=require('./images/photo5.png')%>"
+            alt="Фото из новой коллекции Givenchy"
+          />
+          <img
+            class="looks__image"
+            src="<%=require('./images/photo4.png')%>"
+            alt="Фото из новой коллекции Givenchy"
+          />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <a name="subscribe"></a>
+      <p class="footer__text">
+        Subscribe to the newsletterand be the first to know about new
+        collection’s drop date and news
+      </p>
+      <form class="footer__form">
+        <div class="footer__input-container">
+          <input
+            type="text"
+            id="e-mail"
+            class="footer__input"
+            placeholder="Enter your email here"
+          />
+          <button type="submit" class="button footer__button">Submit</button>
+        </div>
+        <div class="footer__checkbox-container">
+          <label for="checkbox" class="footer__checkbox-label"
+            ><input
+              type="checkbox"
+              name="checkbox"
+              id="checkbox"
+              class="footer__checkbox"
+              required
+            />
+            <span class="footer__checkbox-viewer"></span>
+          </label>
+          <p class="footer__checkbox-text">
+            I consent to the processing of my data by GIVENCHY in accordance
+            with the conditions set forth in the Privacy Policy
+          </p>
+        </div>
+      </form>
+      <p class="footer__copyright">
+        &copy; 2021, Givenchy. Some rights reserved
+      </p>
+    </footer>
+    <div class="side-menu">
+      <div class="side-menu__container">
+        <button
+          class="side-menu__close-button"
+          type="button"
+          aria-label="Кнопка Закрыть"
+        ></button>
+        <form class="side-menu__form" name="side-menu" method="POST" novalidate>
+          <nav class="side-menu__nav">
+            <a class="side-menu__link" href="#about"> About </a>
+            <a class="side-menu__link" href="#looks"> Looks </a>
+            <a class="side-menu__link" href="#subscribe"> Subscribe </a>
+          </nav>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

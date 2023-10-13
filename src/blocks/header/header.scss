@@ -1,0 +1,116 @@
+@use 'utils/mixins';
+@use 'utils/variables';
+
+.header {
+  background-color: $backgroundLightGrey;
+  position: relative;
+  max-height: 900px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 0 20px;
+
+  @include media(xl) {
+    max-height: 646px;
+    padding: 0;
+  }
+
+  @include media(sm) {
+    max-height: 426px;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    align-items: center;
+
+    @include media(sm) {
+      top: 16px;
+    }
+  }
+
+  &__burger {
+    @include icon-size_desktop;
+
+    object-fit: contain;
+    background-image: url('../../images/burger.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    @include media(sm) {
+      @include icon-size_mobile;
+      @include text-type-buttons_mobile;
+    }
+  }
+
+  &__menu-text {
+    @include text-type-buttons_desktop-notepad;
+  }
+
+  &__image {
+    max-width: 700px;
+    width: 100%;
+    max-height: 934px;
+    height: 100%;
+
+    @include media(xl) {
+      width: 486px;
+      height: 646px;
+    }
+
+    @include media(sm) {
+      width: 320px;
+      height: 426px;
+    }
+  }
+
+  &__info {
+    max-width: 700px;
+    width: 100%;
+
+    @include media(xl) {
+      max-width: 485px;
+      position: absolute;
+      top: 233px;
+      right: 20px;
+    }
+
+    @include media(sm) {
+      max-width: 280px;
+      top: 111px;
+    }
+  }
+
+  &__button {
+    @include button-style;
+    @include button-size(350px, 48px);
+    @include text-type-buttons_desktop-notepad;
+    margin-top: 32px;
+
+    @include media(sm) {
+      @include button-size(280px, 44px);
+      @include text-type-buttons_mobile;
+      margin-top: 32px;
+    }
+
+    &:hover {
+      @include button-style-hover;
+    }
+  }
+
+  &__title {
+    display: inline-block;
+  }
+}
